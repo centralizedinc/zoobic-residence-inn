@@ -28,7 +28,8 @@ function init(maincallback) {
         mappings: [
             {
                 "key": "{#fname}",
-                "field": "first_name"
+                "field": "first_name",
+                "type": "insert"
             }
         ]
     })
