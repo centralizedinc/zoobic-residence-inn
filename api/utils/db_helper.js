@@ -3,7 +3,7 @@
 //DB connection
 // =============================================================================
 var mongoose = require('mongoose');
-var uri = 'mongodb://VPBelo:RQrU1PukJXGRDeLV@zoobicinn-shard-00-00-k0tbm.azure.mongodb.net:27017,zoobicinn-shard-00-01-k0tbm.azure.mongodb.net:27017,zoobicinn-shard-00-02-k0tbm.azure.mongodb.net:27017/chatbot-template-sample?ssl=true&replicaSet=ZoobicInn-shard-0&authSource=admin&retryWrites=true&w=majority';
+var uri = 'mongodb://heroku_w2cbbjsh:2djh1a5v0qmqk3t5at2ec2l2m4@ds143132.mlab.com:43132/heroku_w2cbbjsh';
 
 mongoose.Promise = require('bluebird');
 
