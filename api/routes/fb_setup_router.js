@@ -114,7 +114,7 @@ function setupPersistentMenu(callback) {
                     {
                         "type": "web_url",
                         "title": "Book now",
-                        "url": "https://www.originalcoastclothing.com/",
+                        "url": "https://www.zoomanity.com.ph/residence-inn-tagaytay/",
                         "webview_height_ratio": "full"
                     }
                 ]
