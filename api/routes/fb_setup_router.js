@@ -107,10 +107,16 @@ function setupPersistentMenu(callback) {
                         "payload": "GET_STARTED"
                     },
                     {
-                        "title": "HELP",
                         "type": "postback",
-                        "payload": "HELP"
+                        "title": "Talk to an agent",
+                        "payload": "CARE_HELP"
                     },
+                    {
+                        "type": "web_url",
+                        "title": "Book now",
+                        "url": "https://www.originalcoastclothing.com/",
+                        "webview_height_ratio": "full"
+                    }
                 ]
             },
             {
