@@ -54,12 +54,16 @@ function sendMessageCallback(sender, messageData, callback) {
  */
 function typing(sender) {
     request({
-        url: constants_helper.fb_message_url,
-        qs: { access_token: constants_helper.fb_token },
-        method: 'POST',
+        url: "https://graph.facebook.com/v2.6/me/messages",
+        qs: {
+          access_token: common.getToken()
+        },
+        method: "POST",
         json: {
-            recipient: { id: sender },
-            sender_action: "typing_on"
+          recipient: {
+            id: sender
+          },
+          sender_action: "typing_on"
         }
     }, function (error, response, body) {
         if (error) {
