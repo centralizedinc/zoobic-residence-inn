@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # chatbot-template
 Boiler-plate for fb chatbot using node+express+vue
 
@@ -49,7 +48,3 @@ https://<domain>/facebook/setup
 https://<domain>/facebook/setup/db
 
 ```
-=======
-# zoobic-residence-inn
-Relax and unwind in perfection chatbot
->>>>>>> 4385226f5334d3965436aa76de809ef52f074523
