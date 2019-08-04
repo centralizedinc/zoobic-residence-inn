@@ -108,12 +108,12 @@ function setupPersistentMenu(callback) {
                     },
                     {
                         "type": "postback",
-                        "title": "Talk to an agent",
+                        "title": "🛌 Rooms",
                         "payload": "CARE_HELP"
                     },
                     {
                         "type": "web_url",
-                        "title": "Book now",
+                        "title": "🏨 About Zoobic Residence Inn",
                         "url": "https://www.zoomanity.com.ph/residence-inn-tagaytay/",
                         "webview_height_ratio": "full"
                     }

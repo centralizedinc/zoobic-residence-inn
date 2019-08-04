@@ -9,6 +9,8 @@ var sender_helper = require('../utils/sender_helper.js');
 var reply_helper = require('../utils/reply_helper.js');
 var constants = require('../utils/constants_helper');
 
+var directions_router = require("./directions_router.js");
+
 var ChatbotResponse = require('../models/ChatbotResponse');
 var service_facade = require('../services/service_facade');
 
@@ -149,7 +151,16 @@ function processRequest(sender, text, callback_params, callback_output) {
                             callback_output();
                         });
                     });
-            } else {
+            }else if (text.indexOf("FIND_DIRECTIONS_") !== -1) {
+                var locationCoordinates = [];
+                locationCoordinates[0] = "14.52917241649,120.99253692141"; //Hotel California
+                locationCoordinates[1] = text.replace("FIND_DIRECTIONS_", "");
+                console.log("Find Directions: " + JSON.stringify(locationCoordinates));
+                directions_router.getDirections(sender, locationCoordinates, cb => {
+                  callback_output();
+                });
+              } 
+            else {
                 // AI catch block
                 callback_output();
             }
