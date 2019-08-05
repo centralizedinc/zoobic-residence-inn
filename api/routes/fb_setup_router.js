@@ -109,12 +109,12 @@ function setupPersistentMenu(callback) {
                     {
                         "type": "postback",
                         "title": "🛌 Rooms",
-                        "payload": "CARE_HELP"
+                        "payload": "ROOMS"
                     },
                     {
                         "type": "web_url",
-                        "title": "🏨 About Zoobic Residence Inn",
-                        "url": "https://www.zoomanity.com.ph/residence-inn-tagaytay/",
+                        "title": "🏨 About Zoobic Lodge Tiara",
+                        "url": "https://www.zoomanity.com.ph/zoobic-lodge-tiara-crown-peak/",
                         "webview_height_ratio": "full"
                     }
                 ]

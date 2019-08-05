@@ -83,10 +83,6 @@ export default {
       video_url: ""
     };
   },
-  created() {
-    this.video_url =
-      require("../assets/01 - Hotel California.mp3") + "?autoplay=1";
-  },
   methods: {
     close() {
       MessengerExtensions.requestCloseBrowser(
