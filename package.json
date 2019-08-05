@@ -6,6 +6,8 @@
   "scripts": {
     "install-all": "npm --prefix ./web install ./web && npm install",
     "start": "node bin/server.js",
+    "build": "node web/build/build.js",
+    "dev": "npm run build && npm run start",
     "push": "npm run build && git add . && git commit -m 'App deployment' && git pull && git push origin master",
     "deploy-heroku": "npm run build && git add . && git commit -m 'App deployment' && git pull && git push heroku master"
   },
